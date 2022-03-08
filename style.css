@@ -11,93 +11,100 @@
 *{
     padding: 0;
     margin: 0;
-    font-size: 1.0em;
     text-decoration: none;
-
+    font-size: 1em;
 }
+
+/*Configurações Globais Extras*/
+
+    a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
 
 /*Header*/
 
-header{
-    display: block;
-    background-color: black;
-    padding: 60px;
-}
+    header {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
 
-header > h1{
-    color: white;
-    font-family: var(--fonte2);
-    font-size: 6.0em;
-    text-align: center;
-    padding: 20px;
-}
+    header > h1 {
+        padding-top: 50px;
+        font-size: 3em;
+        font-variant: small-caps;
+        font-family: var(--fonte1);
+    }
 
-header > p, a{
-    color: white;
-    font-size: 1.1em;
-    text-align: center;
-    font-family: var(--fonte1);
-}
+    header > p {
+        padding-bottom: 50px;
+        font-size: 1.2em;
+    }
 
-a{
-    font-weight: 700;
-}
 
-a:hover{
-    text-decoration: underline;
-}
 
 /*Main*/
 
-section{
-    margin-top: 50px;
-}
+    html, body {
+        max-height: 100vh;
+        font-family: var(--fonte1);
+    }
 
-section > p{
-    font-family: var(--fonte3);
-    font-size: 3em;
-    max-width: 600px;
-    padding: 10px;
-    margin-left: 20px;
+    div{
+        padding-bottom: 3em;
+    }
 
-}
+    section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 30px;
+        line-height: 2em;
+        font-family: var(--fonte3);
+        font-size: 2em;
+    }
 
-section#img01{
-    background-image: url(imagens/background001.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    background-attachment: fixed;
-    box-shadow: inset 5px 12px 5px rgba(0, 0, 0, 0.397);
-}
+    section.normal {
+        background-color: white;
+    }
 
-section#img01 > p{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
+    section.imagem {
+        background-color: gray;
+        color: white;
+        box-shadow: inset 1px 15px 5px rgba(0, 0, 0, 0.295);
+    }
 
-section#img02{
-    background-image: url(imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    background-attachment: fixed;
-    box-shadow: inset 5px 12px 5px rgba(0, 0, 0, 0.397);
-}
+    section.imagem > p {
+        background-color: rgba(0, 0, 0, 0.274);
+        max-width: 400px;
+    }
 
-section#img02 > p{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
+    section#img01{
+        background-image: url(imagens/background001.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    section#img02 {
+        background-image: url(imagens/background002.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
 /*Footer*/
 
-footer{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    font-family: var(--fonte1);
-    text-align: center;
-}
+ footer {
+     background-color: black;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     font-size: 1.2em;
+ }
 
 
