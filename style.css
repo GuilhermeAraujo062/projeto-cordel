@@ -55,8 +55,8 @@
         font-family: var(--fonte1);
     }
 
-    div{
-        padding-bottom: 3em;
+    section > p{
+        padding-bottom: 2em;
     }
 
     section {
@@ -81,6 +81,7 @@
     section.imagem > p {
         background-color: rgba(0, 0, 0, 0.274);
         max-width: 400px;
+        text-shadow: 1px 1px 0px black;
     }
 
     section#img01{
